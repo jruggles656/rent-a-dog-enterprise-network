@@ -416,7 +416,6 @@ During pentest week, we deployed additional monitoring scripts:
 ```
 rent-a-dog-enterprise-network/
 ├── 📄 README.md                          ← You are here
-├── 📄 CLAUDE.md                          ← AI assistant context for this project
 │
 ├── 🌐 website/                           ← Rent a Dog PHP application
 │   ├── index.php                         ← Homepage
@@ -459,10 +458,10 @@ rent-a-dog-enterprise-network/
 │   ├── suricata-digests/                 ← 1,900+ Suricata alert digest reports
 │   └── autoblock-logs/                   ← Autoblock operational logs
 │
-└── 📄 docs/                              ← Documentation
-    ├── reports/                           ← Technical reports (25+ documents)
-    ├── architecture/                      ← System architecture references
-    └── deliverables/                      ← Course deliverables
+└── 📄 docs/                              ← Documentation (curated portfolio set)
+    ├── reports/                           ← Architecture, OpenClaw, Suricata, BarkBot, IR pipeline
+    ├── architecture/                      ← System architecture + project context
+    └── deliverables/                      ← Pentest Final Report, Findings Catalog, Network Diagram
 ```
 
 ---
