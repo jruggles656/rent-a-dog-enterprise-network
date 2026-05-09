@@ -11,11 +11,52 @@
 
 ---
 
+## 👥 Built by Team 6
+
+<table align="center">
+  <tr>
+    <td align="center" width="170">
+      <a href="https://github.com/jruggles656">
+        <img src="https://github.com/jruggles656.png" width="110" alt="James Ruggles" />
+        <br />
+        <b>James Ruggles</b>
+      </a>
+      <br />
+      <sub>🔧 Web + AI Infra<br/>Security Lead</sub>
+    </td>
+    <td align="center" width="170">
+      <!-- TODO: replace src with https://github.com/USERNAME.png and wrap in <a href="https://github.com/USERNAME"> -->
+      <img src="https://ui-avatars.com/api/?name=Jason+Cortez-Robles&size=220&background=30363d&color=e6edf3&bold=true&font-size=0.4" width="110" alt="Jason Cortez-Robles" />
+      <br />
+      <b>Jason Cortez-Robles</b>
+      <br />
+      <sub>🌐 Network +<br/>Firewall Admin</sub>
+    </td>
+    <td align="center" width="170">
+      <!-- TODO: replace src with https://github.com/USERNAME.png and wrap in <a href="https://github.com/USERNAME"> -->
+      <img src="https://ui-avatars.com/api/?name=Oscar+Ponce&size=220&background=30363d&color=e6edf3&bold=true&font-size=0.4" width="110" alt="Oscar Ponce" />
+      <br />
+      <b>Oscar Ponce</b>
+      <br />
+      <sub>🗄️ Database +<br/>Linux Admin</sub>
+    </td>
+    <td align="center" width="170">
+      <!-- TODO: replace src with https://github.com/USERNAME.png and wrap in <a href="https://github.com/USERNAME"> -->
+      <img src="https://ui-avatars.com/api/?name=Allegra+Ramirez&size=220&background=30363d&color=e6edf3&bold=true&font-size=0.4" width="110" alt="Allegra Ramirez" />
+      <br />
+      <b>Allegra Ramirez</b>
+      <br />
+      <sub>🏛️ Active Directory<br/>+ DNS Admin</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 📋 Table of Contents
 
 - [🚀 Quick Start](#-quick-start)
 - [🔭 Project Overview](#-project-overview)
-- [👥 Team 6](#-team-6)
 - [🌐 Network Architecture](#-network-architecture)
 - [🖥️ VM Inventory](#️-vm-inventory)
 - [🛡️ Security Posture](#️-security-posture)
@@ -71,17 +112,6 @@ This project simulates a real-world enterprise environment for **Rent a Dog**, a
 ### 🎓 Course Context
 
 IST 4910 is a capstone-level Enterprise System Administration course. Each team receives a Proxmox cluster allocation on CSUSB's Cyberlab and must build a complete enterprise network from scratch — then defend it during a week-long adversarial pentest where other teams attack your infrastructure.
-
----
-
-## 👥 Team 6
-
-| Member | Primary Role | Key Systems |
-|--------|-------------|-------------|
-| **James Ruggles** | 🔧 Web + AI Infrastructure, Security Lead | WebServer, Kali, CD1, OpenClaw, Autoblock |
-| **Jason Cortez-Robles** | 🌐 Network + Firewall Admin | Router-WAN, Router-LAN, OPNsense |
-| **Oscar Ponce** | 🗄️ Database + Linux Admin | DatabaseServer, CD2, Python automation |
-| **Allegra Ramirez** | 🏛️ Active Directory + DNS Admin | AD/DNS Domain Controller |
 
 ---
 
