@@ -1,0 +1,52 @@
+# critical-patterns.txt — Suricata alerts matching any of these regexes trigger a Telegram alert.
+# Case-insensitive. Empty lines + lines starting with # are ignored.
+# severity=1 signatures always alert regardless of this list.
+
+# --- Malware / exploitation ---
+trojan
+ransomware
+cobalt\s*strike
+meterpreter
+reverse\s+shell
+shellcode
+exploit\s+attempt
+buffer\s+overflow
+
+# --- Web application attacks ---
+sql\s+injection
+cross.?site\s+scripting
+remote\s+code\s+execution
+file\s+inclusion
+xxe\s+attempt
+command\s+injection
+
+# --- Credential / auth attacks ---
+credential\s+dump
+password\s+spray
+kerberoast
+golden\s+ticket
+silver\s+ticket
+pass.?the.?hash
+ntlm\s+relay
+
+# --- C2 / beacon / tunnel ---
+command\s+and\s+control
+c2\s+beacon
+c&c
+dns\s+tunnel
+https?\s+tunnel
+covert\s+channel
+
+# --- Known pentest tools (sig text often contains these) ---
+\bmimikatz\b
+\brubeus\b
+\bbloodhound\b
+\bresponder\b
+\bimpacket\b
+\bcrackmapexec\b
+\bmetasploit\b
+
+# Not in this list (deliberately — too noisy during pentest week):
+# - Port scan (TCP, UDP) — the whole point of pentest is they scan us
+# - Nmap NSE script probes
+# - Generic recon signatures

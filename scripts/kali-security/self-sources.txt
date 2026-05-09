@@ -1,0 +1,15 @@
+# self-sources.txt — Source IPs treated as admin/self traffic, not attackers.
+# Alerts from these sources are:
+#   - Still logged in the digest (evidence preserved)
+#   - Listed in a separate "Self / admin" section
+#   - Never trigger Telegram critical pages
+#   - Excluded from critical pattern matching
+#
+# Format: IP<whitespace>label (one per line).
+# Comment lines (starting with #) and blank lines ignored.
+
+172.31.0.100  Kali (sole authorized admin source)
+
+# Add more here if Zabbix probes or other legitimate internal traffic
+# starts tripping ET SCAN rules during pentest week. Example:
+# 10.0.1.200    DB (Zabbix server probes)

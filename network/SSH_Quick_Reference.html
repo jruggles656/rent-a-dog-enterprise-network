@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSH Quick Reference — Team 6 Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jetbrains-mono/2.304/jetbrains-mono.min.css" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0c0e1a;
+    --bg-card: #141627;
+    --bg-row: #1a1d35;
+    --bg-row-alt: #161830;
+    --border: #2a2d4a;
+    --text-primary: #e2e4f0;
+    --text-dim: #8b8faa;
+    --text-muted: #5d6180;
+    --accent-cyan: #5eead4;
+    --accent-pink: #f472b6;
+    --zone-wan: #fb923c;
+    --zone-wan-bg: rgba(251,146,60,0.12);
+    --zone-dmz: #a78bfa;
+    --zone-dmz-bg: rgba(167,139,250,0.12);
+    --zone-lan: #34d399;
+    --zone-lan-bg: rgba(52,211,153,0.12);
+    --zone-fw: #60a5fa;
+    --zone-fw-bg: rgba(96,165,250,0.12);
+    --auth-key: #5eead4;
+    --auth-key-bg: rgba(94,234,212,0.08);
+    --auth-pw: #fbbf24;
+    --auth-pw-bg: rgba(251,191,36,0.08);
+    --gradient-1: #6366f1;
+    --gradient-2: #8b5cf6;
+    --gradient-3: #a855f7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .reference-card {
+    width: 100%;
+    max-width: 1400px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(99,102,241,0.08),
+      0 24px 80px -12px rgba(0,0,0,0.6),
+      0 0 120px -40px rgba(99,102,241,0.15);
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, var(--gradient-1) 0%, var(--gradient-2) 50%, var(--gradient-3) 100%);
+    padding: 28px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 20% 50%, rgba(255,255,255,0.1), transparent),
+      radial-gradient(ellipse 40% 60% at 80% 30%, rgba(255,255,255,0.06), transparent);
+  }
+
+  .header-left { position: relative; z-index: 1; }
+
+  .header-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+
+  .header-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    margin-top: 4px;
+    letter-spacing: 0.01em;
+  }
+
+  .header-badge {
+    position: relative;
+    z-index: 1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Table ── */
+  .table-wrapper { padding: 8px; }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 3px;
+    font-size: 0.9rem;
+  }
+
+  thead th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    padding: 14px 16px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr {
+    background: var(--bg-row);
+    transition: background 0.15s ease;
+  }
+  tbody tr:nth-child(even) { background: var(--bg-row-alt); }
+  tbody tr:hover { background: #1e2140; }
+
+  tbody td {
+    padding: 14px 16px;
+    vertical-align: middle;
+  }
+
+  tbody tr td:first-child { border-radius: 8px 0 0 8px; }
+  tbody tr td:last-child { border-radius: 0 8px 8px 0; }
+
+  /* ── Machine Name ── */
+  .machine-name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+  }
+
+  .machine-ip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  /* ── Zone Badges ── */
+  .zone {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .zone-wan { color: var(--zone-wan); background: var(--zone-wan-bg); border: 1px solid rgba(251,146,60,0.2); }
+  .zone-dmz { color: var(--zone-dmz); background: var(--zone-dmz-bg); border: 1px solid rgba(167,139,250,0.2); }
+  .zone-lan { color: var(--zone-lan); background: var(--zone-lan-bg); border: 1px solid rgba(52,211,153,0.2); }
+  .zone-fw  { color: var(--zone-fw);  background: var(--zone-fw-bg);  border: 1px solid rgba(96,165,250,0.2); }
+
+  /* ── SSH Command ── */
+  .ssh-cmd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--accent-cyan);
+    white-space: nowrap;
+  }
+
+  .ssh-flag {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  /* ── Auth Method ── */
+  .auth {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+  .auth-key { color: var(--auth-key); background: var(--auth-key-bg); border: 1px solid rgba(94,234,212,0.15); }
+  .auth-pw  { color: var(--auth-pw);  background: var(--auth-pw-bg);  border: 1px solid rgba(251,191,36,0.15); }
+
+  .auth-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .auth-key .auth-dot { background: var(--auth-key); box-shadow: 0 0 6px var(--auth-key); }
+  .auth-pw .auth-dot  { background: var(--auth-pw);  box-shadow: 0 0 6px var(--auth-pw); }
+
+  /* ── Password ── */
+  .pw {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent-pink);
+    letter-spacing: 0.02em;
+  }
+
+  .pw-tracker {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-style: italic;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .vmid {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #818cf8;
+    background: rgba(129,140,248,0.1);
+    border: 1px solid rgba(129,140,248,0.15);
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 16px 24px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-note {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .footer-note strong {
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+
+  .legend {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-dim);
+  }
+
+  .legend-swatch {
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+  }
+
+  .updated {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    padding: 6px 24px 16px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <div class="reference-card">
+
+    <div class="header">
+      <div class="header-left">
+        <div class="header-title">SSH Quick Reference</div>
+        <div class="header-subtitle">All connections from Kali (172.31.0.100) via Tailscale</div>
+      </div>
+      <div class="header-badge">Team 6 Lab</div>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Machine</th>
+            <th>Zone</th>
+            <th>SSH Command</th>
+            <th>Auth</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- WAN Zone -->
+          <tr>
+            <td>
+              <div class="machine-name">OPNsense <span class="vmid">1318</span></div>
+              <div class="machine-ip">172.31.0.2 / 10.0.1.1 / 192.168.2.1</div>
+            </td>
+            <td><span class="zone zone-wan">WAN</span></td>
+            <td>
+              <span class="ssh-cmd">ssh root@172.31.0.2</span><br>
+              <span class="ssh-flag">-o HostKeyAlgorithms=+ssh-rsa</span>
+            </td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>RSA Key</span></td>
+            <td><span class="pw">4hgNw.f_C6xWaZPen_A_F6aP2_ieJi</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">Router-WAN <span class="vmid">1320</span></div>
+              <div class="machine-ip">172.31.0.1</div>
+            </td>
+            <td><span class="zone zone-wan">WAN</span></td>
+            <td>
+              <span class="ssh-cmd">ssh vyos@172.31.0.1</span><br>
+              <span class="ssh-flag">-o HostKeyAlgorithms=+ssh-rsa</span>
+            </td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>RSA Key</span></td>
+            <td><span class="pw">ap2LH9r96ezj*aHFq_MHoCX*nQ4ptT</span></td>
+          </tr>
+
+          <!-- DMZ Zone -->
+          <tr>
+            <td>
+              <div class="machine-name">WebServer <span class="vmid">1325</span></div>
+              <div class="machine-ip">10.0.1.100</div>
+            </td>
+            <td><span class="zone zone-dmz">DMZ</span></td>
+            <td><span class="ssh-cmd">ssh Administrator@10.0.1.100</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">LwnVX.@8zNz9G7smc49fnY.K73iHfp</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">DatabaseServer <span class="vmid">1323</span></div>
+              <div class="machine-ip">10.0.1.200</div>
+            </td>
+            <td><span class="zone zone-dmz">DMZ</span></td>
+            <td><span class="ssh-cmd">ssh playerone@10.0.1.200</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">v_PnrgDEJq2HWMAA4LmoouN_trP3UY</span></td>
+          </tr>
+
+          <!-- LAN Zone -->
+          <tr>
+            <td>
+              <div class="machine-name">Router-LAN <span class="vmid">1319</span></div>
+              <div class="machine-ip">192.168.2.2 / 192.168.1.1</div>
+            </td>
+            <td><span class="zone zone-lan">LAN</span></td>
+            <td>
+              <span class="ssh-cmd">ssh vyos@192.168.1.1</span><br>
+              <span class="ssh-flag">-o HostKeyAlgorithms=+ssh-rsa</span>
+            </td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>RSA Key</span></td>
+            <td><span class="pw">m@NTQZPMrTGbMtTYeEN9UUQ*bKad2V</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">AD / DNS <span class="vmid">1322</span></div>
+              <div class="machine-ip">192.168.1.5</div>
+            </td>
+            <td><span class="zone zone-lan">LAN</span></td>
+            <td><span class="ssh-cmd">ssh Administrator@192.168.1.5</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">8SMg42kjUv3cooQ3w252U2SLbOdXwu</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">ClientDesktop1 <span class="vmid">1324</span></div>
+              <div class="machine-ip">192.168.1.100 · Windows 11</div>
+            </td>
+            <td><span class="zone zone-lan">LAN</span></td>
+            <td><span class="ssh-cmd">ssh Administrator@192.168.1.100</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">rvNdFPdZ_i_usfzH8*UrGnrU96kNW*</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">ClientDesktop2 <span class="vmid">1321</span></div>
+              <div class="machine-ip">192.168.1.51 · RHEL 10</div>
+            </td>
+            <td><span class="zone zone-lan">LAN</span></td>
+            <td><span class="ssh-cmd">ssh playerone@192.168.1.51</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">WrAhyPZx!!Qeo.Cn8kdkHjVZi2Lkj2</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="machine-name">Kali <span class="vmid">201</span></div>
+              <div class="machine-ip">172.31.0.100 · Tailscale &lt;TAILSCALE_IP&gt;</div>
+            </td>
+            <td><span class="zone zone-wan">WAN</span></td>
+            <td><span class="ssh-cmd">ssh kali@&lt;TAILSCALE_IP&gt;</span></td>
+            <td><span class="auth auth-key"><span class="auth-dot"></span>ed25519</span></td>
+            <td><span class="pw">t209RlQr2UgsrjBUcCT2dCPODjkYwt</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <div class="footer-note">
+        <strong>SSH-RSA flag</strong> needed for VyOS &amp; OPNsense (legacy host keys). All others use ed25519.<br>
+        Key auth is deployed on all 8 machines — passwords are fallback only. Config handled by <strong>~/.ssh/config</strong> on Kali.
+      </div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background:var(--zone-wan)"></span>WAN</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:var(--zone-dmz)"></span>DMZ</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:var(--zone-lan)"></span>LAN</span>
+      </div>
+    </div>
+
+    <div class="updated">Updated April 12, 2026 · Session 19</div>
+  </div>
+</body>
+</html>

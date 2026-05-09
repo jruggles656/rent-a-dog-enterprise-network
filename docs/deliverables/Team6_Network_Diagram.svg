@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 920" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="wanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFCDD2"/><stop offset="100%" stop-color="#FFEBEE"/>
+    </linearGradient>
+    <linearGradient id="fwGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE0B2"/><stop offset="100%" stop-color="#FFF3E0"/>
+    </linearGradient>
+    <linearGradient id="dmzGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8E6C9"/><stop offset="100%" stop-color="#E8F5E9"/>
+    </linearGradient>
+    <linearGradient id="lanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BBDEFB"/><stop offset="100%" stop-color="#E3F2FD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1B3A5C">Team 6 — Rent a Dog — Network Topology</text>
+  <text x="550" y="55" text-anchor="middle" font-size="12" fill="#666">IST 4910 — Enterprise System Administration — Dr. Nestler — Spring 2026</text>
+
+  <!-- WAN Zone -->
+  <rect x="30" y="70" width="1040" height="195" rx="12" fill="url(#wanGrad)" stroke="#E53935" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="95" font-size="16" font-weight="bold" fill="#C62828">WAN Zone — 172.31.0.0/24</text>
+
+  <!-- Internet Cloud -->
+  <ellipse cx="550" cy="130" rx="80" ry="30" fill="#ECEFF1" stroke="#78909C" stroke-width="2"/>
+  <text x="550" y="135" text-anchor="middle" font-size="13" font-weight="bold" fill="#455A64">Internet</text>
+
+  <!-- External Switch -->
+  <rect x="490" y="170" width="120" height="28" rx="4" fill="#CFD8DC" stroke="#78909C" stroke-width="1.5"/>
+  <text x="550" y="189" text-anchor="middle" font-size="11" fill="#37474F">External Switch</text>
+
+  <!-- Line: Internet → External Switch -->
+  <line x1="550" y1="160" x2="550" y2="170" stroke="#78909C" stroke-width="2"/>
+
+  <!-- Router-WAN -->
+  <rect x="280" y="205" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="370" y="225" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Router-WAN (VyOS)</text>
+  <text x="370" y="243" text-anchor="middle" font-size="10" fill="#424242">eth4: 172.31.0.1 | nest06a1</text>
+
+  <!-- SecurityDesktop (Kali) -->
+  <rect x="640" y="205" width="200" height="50" rx="8" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740" y="225" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">SecurityDesktop (Kali)</text>
+  <text x="740" y="243" text-anchor="middle" font-size="10" fill="#424242">172.31.0.100 | nest06a1</text>
+
+  <!-- Lines from External Switch -->
+  <line x1="520" y1="198" x2="370" y2="205" stroke="#78909C" stroke-width="2"/>
+  <line x1="580" y1="198" x2="740" y2="205" stroke="#78909C" stroke-width="2"/>
+
+  <!-- Firewall Zone -->
+  <rect x="30" y="275" width="1040" height="100" rx="12" fill="url(#fwGrad)" stroke="#EF6C00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="300" font-size="16" font-weight="bold" fill="#E65100">Firewall Zone — 192.168.2.0/24</text>
+
+  <!-- WAN Switch -->
+  <rect x="310" y="310" width="120" height="28" rx="4" fill="#CFD8DC" stroke="#78909C" stroke-width="1.5"/>
+  <text x="370" y="329" text-anchor="middle" font-size="11" fill="#37474F">WAN Switch</text>
+
+  <!-- Firewall -->
+  <rect x="460" y="305" width="220" height="55" rx="8" fill="#FFFFFF" stroke="#E65100" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="570" y="326" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Firewall (OPNsense)</text>
+  <text x="570" y="345" text-anchor="middle" font-size="10" fill="#424242">192.168.2.2 | VTnet0/1/2</text>
+  <text x="570" y="355" text-anchor="middle" font-size="9" fill="#757575">nest06a1 / nest06a3 / nest06a2</text>
+
+  <!-- Line: Router-WAN → WAN Switch → Firewall -->
+  <line x1="370" y1="255" x2="370" y2="310" stroke="#1565C0" stroke-width="2"/>
+  <line x1="430" y1="324" x2="460" y2="330" stroke="#78909C" stroke-width="2"/>
+
+  <!-- DMZ Zone -->
+  <rect x="570" y="395" width="500" height="180" rx="12" fill="url(#dmzGrad)" stroke="#2E7D32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="590" y="420" font-size="16" font-weight="bold" fill="#2E7D32">DMZ Zone — 10.0.1.0/24</text>
+
+  <!-- DMZ Switch -->
+  <rect x="760" y="435" width="120" height="28" rx="4" fill="#CFD8DC" stroke="#78909C" stroke-width="1.5"/>
+  <text x="820" y="454" text-anchor="middle" font-size="11" fill="#37474F">DMZ Switch</text>
+
+  <!-- Line: Firewall → DMZ Switch -->
+  <line x1="650" y1="360" x2="820" y2="435" stroke="#2E7D32" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- WebServer -->
+  <rect x="610" y="480" width="200" height="75" rx="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="710" y="500" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">WebServer (RHEL)</text>
+  <text x="710" y="516" text-anchor="middle" font-size="10" fill="#424242">10.0.1.100 | nest06a2</text>
+  <text x="710" y="532" text-anchor="middle" font-size="9" fill="#757575">Nginx, PHP, Postfix/Dovecot</text>
+  <text x="710" y="546" text-anchor="middle" font-size="9" fill="#1565C0">Bark Bot (AI Chatbot)</text>
+
+  <!-- Database -->
+  <rect x="860" y="480" width="180" height="75" rx="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="950" y="500" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Database (RHEL)</text>
+  <text x="950" y="516" text-anchor="middle" font-size="10" fill="#424242">10.0.1.200 | nest06a2</text>
+  <text x="950" y="532" text-anchor="middle" font-size="9" fill="#757575">PostgreSQL + pgcrypto</text>
+  <text x="950" y="546" text-anchor="middle" font-size="9" fill="#757575">Port 5432</text>
+
+  <!-- Lines from DMZ Switch -->
+  <line x1="790" y1="463" x2="710" y2="480" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="850" y1="463" x2="950" y2="480" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- WebServer ↔ Database line -->
+  <line x1="810" y1="518" x2="860" y2="518" stroke="#2E7D32" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="835" y="512" text-anchor="middle" font-size="8" fill="#2E7D32">5432</text>
+
+  <!-- LAN Zone -->
+  <rect x="30" y="395" width="520" height="520" rx="12" fill="url(#lanGrad)" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="420" font-size="16" font-weight="bold" fill="#0D47A1">Internal LAN — 192.168.1.0/24</text>
+
+  <!-- Firewall Switch -->
+  <rect x="180" y="435" width="120" height="28" rx="4" fill="#CFD8DC" stroke="#78909C" stroke-width="1.5"/>
+  <text x="240" y="454" text-anchor="middle" font-size="11" fill="#37474F">Firewall Switch</text>
+
+  <!-- Line: Firewall → Firewall Switch -->
+  <line x1="490" y1="360" x2="240" y2="435" stroke="#1565C0" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Router-LAN -->
+  <rect x="120" y="480" width="240" height="55" rx="8" fill="#FFFFFF" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="240" y="500" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Router-LAN (VyOS)</text>
+  <text x="240" y="516" text-anchor="middle" font-size="10" fill="#424242">eth4: 192.168.2.1 | eth5: 192.168.1.1</text>
+  <text x="240" y="528" text-anchor="middle" font-size="9" fill="#757575">nest06a3 (eth4) / nest06a4 (eth5)</text>
+
+  <!-- Line: Firewall Switch → Router-LAN -->
+  <line x1="240" y1="463" x2="240" y2="480" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- Internal Switch -->
+  <rect x="180" y="555" width="120" height="28" rx="4" fill="#CFD8DC" stroke="#78909C" stroke-width="1.5"/>
+  <text x="240" y="574" text-anchor="middle" font-size="11" fill="#37474F">Internal Switch</text>
+
+  <!-- Line: Router-LAN → Internal Switch -->
+  <line x1="240" y1="535" x2="240" y2="555" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- AD/DNS -->
+  <rect x="50" y="610" width="180" height="65" rx="8" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="630" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">AD/DNS (Win Server)</text>
+  <text x="140" y="646" text-anchor="middle" font-size="10" fill="#424242">192.168.1.5 | nest06a4</text>
+  <text x="140" y="662" text-anchor="middle" font-size="9" fill="#757575">Active Directory, DNS, GPO</text>
+
+  <!-- Tracker (Zabbix) -->
+  <rect x="260" y="610" width="180" height="65" rx="8" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="630" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">Tracker (RHEL)</text>
+  <text x="350" y="646" text-anchor="middle" font-size="10" fill="#424242">192.168.1.10 | nest06a4</text>
+  <text x="350" y="662" text-anchor="middle" font-size="9" fill="#757575">Zabbix + rsyslog</text>
+
+  <!-- ClientDesktop1 -->
+  <rect x="50" y="700" width="180" height="65" rx="8" fill="#FFFFFF" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="720" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">ClientDesktop1 (Win11)</text>
+  <text x="140" y="736" text-anchor="middle" font-size="10" fill="#424242">192.168.1.100</text>
+  <text x="140" y="750" text-anchor="middle" font-size="9" fill="#E53935">nest05a4 (verify!)</text>
+
+  <!-- ClientDesktop2 -->
+  <rect x="260" y="700" width="180" height="65" rx="8" fill="#FFFFFF" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="720" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">ClientDesktop2 (RHEL)</text>
+  <text x="350" y="736" text-anchor="middle" font-size="10" fill="#424242">192.168.1.101 | nest06a4</text>
+  <text x="350" y="750" text-anchor="middle" font-size="9" fill="#757575">Browser, SSH, Python</text>
+
+  <!-- Lines from Internal Switch to devices -->
+  <line x1="200" y1="583" x2="140" y2="610" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="280" y1="583" x2="350" y2="610" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="180" y1="583" x2="140" y2="700" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="300" y1="583" x2="350" y2="700" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- Legend -->
+  <rect x="570" y="600" width="500" height="310" rx="10" fill="#FAFAFA" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="590" y="625" font-size="14" font-weight="bold" fill="#1B3A5C">Legend &amp; Reference</text>
+
+  <!-- Zone colors -->
+  <rect x="590" y="638" width="14" height="14" rx="2" fill="#FFCDD2" stroke="#E53935" stroke-width="1"/>
+  <text x="612" y="650" font-size="11" fill="#424242">WAN Zone — 172.31.0.0/24</text>
+  <rect x="590" y="658" width="14" height="14" rx="2" fill="#FFE0B2" stroke="#EF6C00" stroke-width="1"/>
+  <text x="612" y="670" font-size="11" fill="#424242">Firewall Zone — 192.168.2.0/24</text>
+  <rect x="590" y="678" width="14" height="14" rx="2" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="612" y="690" font-size="11" fill="#424242">DMZ Zone — 10.0.1.0/24</text>
+  <rect x="590" y="698" width="14" height="14" rx="2" fill="#BBDEFB" stroke="#1565C0" stroke-width="1"/>
+  <text x="612" y="710" font-size="11" fill="#424242">Internal LAN — 192.168.1.0/24</text>
+
+  <!-- Team ownership -->
+  <text x="590" y="740" font-size="12" font-weight="bold" fill="#1B3A5C">Team Ownership</text>
+  <rect x="590" y="750" width="14" height="14" rx="2" fill="#C8E6C9"/>
+  <text x="612" y="762" font-size="11" fill="#424242">James — Web Lead (WebServer, ClientDesktop1)</text>
+  <rect x="590" y="770" width="14" height="14" rx="2" fill="#BBDEFB"/>
+  <text x="612" y="782" font-size="11" fill="#424242">Jason — Network Lead (Routers, Firewall)</text>
+  <rect x="590" y="790" width="14" height="14" rx="2" fill="#FFE0B2"/>
+  <text x="612" y="802" font-size="11" fill="#424242">Oscar — Database Lead (Database, ClientDesktop2)</text>
+  <rect x="590" y="810" width="14" height="14" rx="2" fill="#E1BEE7"/>
+  <text x="612" y="822" font-size="11" fill="#424242">Allegra — Security Lead (AD/DNS, Tracker, Kali)</text>
+
+  <!-- Key info -->
+  <text x="590" y="852" font-size="12" font-weight="bold" fill="#1B3A5C">Key Info</text>
+  <text x="590" y="870" font-size="10" fill="#424242">Cyberlab Access: team6.pve.cyberlab.csusb.edu</text>
+  <text x="590" y="886" font-size="10" fill="#424242">Nest: 06 (bridges: nest06a1–nest06a4)</text>
+  <text x="590" y="902" font-size="10" fill="#E53935">⚠ ClientDesktop1 on nest05a4 — verify with Prof. Nestler</text>
+
+  <!-- Watermark -->
+  <text x="550" y="915" text-anchor="middle" font-size="9" fill="#BDBDBD">Team 6 — IST 4910 — Spring 2026 — Recreate in Microsoft Visio</text>
+</svg>

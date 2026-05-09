@@ -1,0 +1,13 @@
+# Files where the portfolio_audit.py secret checks should be skipped.
+# This is a class lab project — passwords inside are intentional teaching
+# material, not real production credentials. The lab environment is torn
+# down. The only thing redacted is James's personal Tailscale IP.
+#
+# One path per line, relative to the repo root. Lines starting with # are comments.
+
+network/SSH_Quick_Reference.html
+database/rentadog_setup.sql
+scripts/db-automation/script1_database_backup_secure.py
+scripts/db-automation/script4_ai_agentic_workflow_secure.py
+pentest/findings/012_a3_secrets_out_of_source.md
+website/includes/secrets.php

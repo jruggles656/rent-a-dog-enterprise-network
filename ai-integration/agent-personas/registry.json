@@ -1,0 +1,36 @@
+{
+  "team": "Team 6",
+  "project": "Rent a Dog Enterprise Network",
+  "agents": [
+    {
+      "id": "james-pro",
+      "owner": "James",
+      "specialty": "Web + AI Infrastructure",
+      "promptFile": "agents/team6/james-pro.md"
+    },
+    {
+      "id": "jason-pro",
+      "owner": "Jason",
+      "specialty": "Network + OPNsense + Routing",
+      "promptFile": "agents/team6/jason-pro.md"
+    },
+    {
+      "id": "oscar-pro",
+      "owner": "Oscar",
+      "specialty": "PostgreSQL + Data + Python Automation",
+      "promptFile": "agents/team6/oscar-pro.md"
+    },
+    {
+      "id": "allegra-pro",
+      "owner": "Allegra",
+      "specialty": "Security + Monitoring + Compliance Docs",
+      "promptFile": "agents/team6/allegra-pro.md"
+    },
+    {
+      "id": "ir-watcher",
+      "owner": "Team 6 (shared)",
+      "specialty": "Pentest Week IR + Suricata Analysis + Attack Narration",
+      "promptFile": "agents/team6/ir-watcher.md"
+    }
+  ]
+}

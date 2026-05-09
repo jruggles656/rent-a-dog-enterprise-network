@@ -1,0 +1,738 @@
+2026-04-20T04:58:18 | INFO | OpenClaw Auto-Block (SSH-path) started — mode=LIVE · TTL=24.0h · poll=30s
+2026-04-20T04:58:18 | INFO | Lab whitelist: 13 IPs (+ self-sources.txt dynamic)
+2026-04-20T04:58:18 | INFO | Prior blocks in blocked.json: 0
+2026-04-20T04:58:33 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🛡️ Autoblock starting (LIVE)\nPath: SSH → pfctl · TTL 24.0h · poll 30s\nWhitelist: 13 lab IPs\nPrior blocks: 0\nTouch `/home/kali/.config/openclaw-autoblock/DISABLE` to stop.']' timed out after 15 seconds
+2026-04-20T04:58:33 | INFO | no prior blocks to restore
+✅ Sent via Telegram. Message ID: 99
+2026-04-20T21:05:06 | INFO | OpenClaw Auto-Block (SSH-path) started — mode=LIVE · TTL=24.0h · poll=30s
+2026-04-20T21:05:06 | INFO | Lab whitelist: 13 IPs (+ self-sources.txt dynamic)
+2026-04-20T21:05:06 | INFO | Prior blocks in blocked.json: 0
+2026-04-20T21:05:21 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🛡️ Autoblock starting (LIVE)\nPath: SSH → pfctl · TTL 24.0h · poll 30s\nWhitelist: 13 lab IPs\nPrior blocks: 0\nTouch `/home/kali/.config/openclaw-autoblock/DISABLE` to stop.']' timed out after 15 seconds
+2026-04-20T21:05:21 | INFO | no prior blocks to restore
+✅ Sent via Telegram. Message ID: 118
+2026-04-20T21:34:01 | INFO | OpenClaw Auto-Block v2 (SSH + filter-log) started — mode=LIVE · TTL=24.0h · poll=30s
+2026-04-20T21:34:01 | INFO | Lab whitelist: 13 IPs (+ self-sources.txt)
+2026-04-20T21:34:01 | INFO | Prior blocks: 1
+2026-04-20T21:34:01 | INFO | Filter-log scan thresholds: 15 blocks OR 5 unique ports (last 5000 lines)
+2026-04-20T21:34:16 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🛡️ Autoblock v2 starting (LIVE)\nDetection: Suricata eve.json + OPNsense filter log\nTTL 24.0h · poll 30s\nPrior blocks: 1']' timed out after 15 seconds
+2026-04-20T21:34:16 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-20T21:34:16 | INFO |   restoring 1 IPs
+✅ Sent via Telegram. Message ID: 121
+2026-04-20T21:34:31 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🔁 Autoblock reboot-recovery: re-added 1 prior block(s) to pf.']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 122
+2026-04-21T00:04:57 | INFO | OpenClaw Auto-Block v2 (SSH + filter-log) started — mode=LIVE · TTL=24.0h · poll=30s
+2026-04-21T00:04:57 | INFO | Lab whitelist: 13 IPs (+ self-sources.txt)
+2026-04-21T00:04:57 | INFO | Prior blocks: 1
+2026-04-21T00:04:57 | INFO | Filter-log scan thresholds: 15 blocks OR 5 unique ports (last 5000 lines)
+2026-04-21T00:05:12 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🛡️ Autoblock v2 starting (LIVE)\nDetection: Suricata eve.json + OPNsense filter log\nTTL 24.0h · poll 30s\nPrior blocks: 1']' timed out after 15 seconds
+2026-04-21T00:05:12 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T00:05:12 | INFO |   restoring 1 IPs
+✅ Sent via Telegram. Message ID: 123
+2026-04-21T00:05:27 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '🔁 Autoblock reboot-recovery: re-added 1 prior block(s) to pf.']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 124
+2026-04-21T00:06:28 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:06:43 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 125
+2026-04-21T00:07:13 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:07:28 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 126
+2026-04-21T00:08:29 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:08:44 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 127
+2026-04-21T00:09:14 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:09:29 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 128
+2026-04-21T00:10:30 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:10:45 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 129
+2026-04-21T00:11:16 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:11:31 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 130
+2026-04-21T00:12:01 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:12:16 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 131
+2026-04-21T00:13:17 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:13:32 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 132
+2026-04-21T00:14:02 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:14:17 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 133
+2026-04-21T00:15:18 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:15:33 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 134
+2026-04-21T00:16:03 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:16:18 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 135
+2026-04-21T00:17:19 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:17:34 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 136
+2026-04-21T00:18:04 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:18:19 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 137
+2026-04-21T00:19:20 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:19:35 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 138
+2026-04-21T00:20:05 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:20:20 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 139
+2026-04-21T00:21:21 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:21:36 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 140
+2026-04-21T00:22:07 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:22:22 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 141
+2026-04-21T00:23:22 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:23:37 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 142
+2026-04-21T00:24:08 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:24:23 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 143
+2026-04-21T00:25:23 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:25:38 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 144
+2026-04-21T00:26:09 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:26:24 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 145
+2026-04-21T00:27:24 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:27:39 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 146
+2026-04-21T00:28:10 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:28:25 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 147
+2026-04-21T00:29:26 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:29:41 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 148
+2026-04-21T00:30:11 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:30:26 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 149
+2026-04-21T00:31:27 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:31:42 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 150
+2026-04-21T00:32:12 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:32:27 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 151
+2026-04-21T00:33:28 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:33:43 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 152
+2026-04-21T00:34:13 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:34:28 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 153
+2026-04-21T00:35:29 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:35:44 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 154
+2026-04-21T00:36:14 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:36:29 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 155
+2026-04-21T00:37:30 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:37:45 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 156
+2026-04-21T00:38:16 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:38:31 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 157
+2026-04-21T00:39:01 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:39:16 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 158
+2026-04-21T00:40:17 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:40:32 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 159
+2026-04-21T00:41:02 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:41:17 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 160
+2026-04-21T00:42:18 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:42:33 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 161
+2026-04-21T00:43:03 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:43:18 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 162
+2026-04-21T00:44:19 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:44:34 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 163
+2026-04-21T00:45:04 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:45:19 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 164
+2026-04-21T00:46:20 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:46:35 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 165
+2026-04-21T00:47:05 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:47:20 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 166
+2026-04-21T00:48:21 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:48:36 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 167
+2026-04-21T00:49:07 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:49:22 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 168
+2026-04-21T00:50:22 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:50:37 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 169
+2026-04-21T00:51:08 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:51:23 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 170
+2026-04-21T00:52:23 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:52:38 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 171
+2026-04-21T00:53:09 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:53:24 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 172
+2026-04-21T00:54:25 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:54:40 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 173
+2026-04-21T00:55:10 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:55:25 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 174
+2026-04-21T00:56:26 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:56:41 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 175
+2026-04-21T00:57:11 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:57:26 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 176
+2026-04-21T00:58:27 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:58:42 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 177
+2026-04-21T00:59:12 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T00:59:27 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 178
+2026-04-21T01:00:28 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:00:43 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 179
+2026-04-21T01:01:13 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:01:28 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 180
+2026-04-21T01:02:29 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:02:44 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 181
+2026-04-21T01:03:14 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:03:29 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 182
+2026-04-21T01:04:30 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:04:45 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 183
+2026-04-21T01:05:16 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:05:31 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 184
+2026-04-21T01:06:01 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:06:16 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 185
+2026-04-21T01:07:17 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:07:32 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 186
+2026-04-21T01:08:02 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:08:17 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 187
+2026-04-21T01:09:18 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:09:33 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 188
+2026-04-21T01:10:03 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:10:18 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 189
+2026-04-21T01:11:19 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:11:34 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 190
+2026-04-21T01:12:04 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:12:19 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 191
+2026-04-21T01:13:20 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:13:35 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 192
+2026-04-21T01:14:05 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:14:20 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 193
+2026-04-21T01:15:21 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:15:36 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 194
+2026-04-21T01:16:06 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:16:21 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 196
+2026-04-21T01:17:22 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:17:37 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 198
+2026-04-21T01:18:07 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:18:22 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 199
+2026-04-21T01:19:23 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:19:38 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 200
+2026-04-21T01:20:08 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:20:23 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 201
+2026-04-21T01:21:24 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:21:39 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 202
+2026-04-21T01:22:10 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:22:25 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 203
+2026-04-21T01:23:25 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:23:40 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 204
+2026-04-21T01:24:11 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:24:26 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 205
+2026-04-21T01:25:26 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:25:41 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 206
+2026-04-21T01:26:12 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:26:27 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 207
+2026-04-21T01:27:27 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:27:42 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 208
+2026-04-21T01:28:13 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:28:28 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 209
+2026-04-21T01:29:28 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:29:43 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 210
+2026-04-21T01:30:14 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:30:29 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 211
+2026-04-21T01:31:30 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:31:45 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 212
+2026-04-21T01:32:15 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:32:30 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 213
+2026-04-21T01:33:00 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:33:15 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 214
+2026-04-21T01:34:16 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:34:31 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 215
+2026-04-21T01:35:01 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:35:16 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 216
+2026-04-21T01:36:17 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:36:32 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 217
+2026-04-21T01:37:02 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:37:17 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 218
+2026-04-21T01:38:18 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:38:33 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 219
+2026-04-21T01:39:04 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:39:19 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 220
+2026-04-21T01:40:19 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:40:34 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 221
+2026-04-21T01:41:05 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:41:20 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 222
+2026-04-21T01:42:20 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:42:35 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 223
+2026-04-21T01:43:06 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:43:21 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 224
+2026-04-21T01:44:21 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:44:36 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 225
+2026-04-21T01:45:07 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:45:22 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 226
+2026-04-21T01:46:23 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:46:38 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 227
+2026-04-21T01:47:08 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:47:23 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 229
+2026-04-21T01:48:24 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:48:39 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 230
+2026-04-21T01:49:09 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:49:24 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 231
+2026-04-21T01:49:55 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:50:10 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 232
+2026-04-21T01:50:40 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:50:55 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 233
+2026-04-21T01:51:25 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:51:40 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 234
+2026-04-21T01:52:11 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:52:26 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 235
+2026-04-21T01:53:26 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:53:41 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 236
+2026-04-21T01:54:12 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:54:27 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 237
+2026-04-21T01:55:28 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:55:43 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 238
+2026-04-21T01:56:13 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:56:28 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 239
+2026-04-21T01:57:29 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:57:44 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 240
+2026-04-21T01:58:14 | INFO | reconcile: pf was missing 1 block(s) from blocked.json — re-added 1
+2026-04-21T01:58:29 | ERROR | telegram-alert failed: Command '['/home/kali/.openclaw/workspace/scripts/telegram-alert.sh', '⚠️ Autoblock reconcile: pf table was missing 1 block(s) from blocked.json. Re-added. Likely an OPNsense pf reload cleared the runtime table. IPs: 172.31.0.67']' timed out after 15 seconds
+✅ Sent via Telegram. Message ID: 241
+2026-04-21T01:58:37 | INFO | ======================================================================
+2026-04-21T01:58:37 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=19676
+2026-04-21T01:58:37 | INFO |   mode=DRY-RUN · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T01:58:37 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T01:58:37 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T01:58:37 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T01:58:37 | INFO |   lifetime wipes seen: 0
+2026-04-21T01:58:37 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T01:58:37 | INFO |   health ✅ opnsense_pf_read: 1 entries
+2026-04-21T01:58:37 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T01:58:37 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T01:58:53 | INFO | DRY-RUN: would restore 1 prior blocks
+2026-04-21T01:58:54 | INFO | --once exit. cycle=1 new_blocks=0
+2026-04-21T01:59:07 | INFO | ======================================================================
+2026-04-21T01:59:07 | INFO | ======================================================================
+2026-04-21T01:59:07 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=19726
+2026-04-21T01:59:07 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=19726
+2026-04-21T01:59:07 | INFO |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T01:59:07 | INFO |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T01:59:07 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T01:59:07 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T01:59:07 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T01:59:07 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T01:59:07 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T01:59:07 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T01:59:07 | INFO |   lifetime wipes seen: 0
+2026-04-21T01:59:07 | INFO |   lifetime wipes seen: 0
+2026-04-21T01:59:07 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T01:59:07 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T01:59:07 | INFO |   health ✅ opnsense_pf_read: 0 entries
+2026-04-21T01:59:07 | INFO |   health ✅ opnsense_pf_read: 0 entries
+2026-04-21T01:59:07 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T01:59:07 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T01:59:07 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T01:59:07 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T01:59:29 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T01:59:29 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T01:59:29 | INFO |   restoring 1 IPs
+2026-04-21T01:59:29 | INFO |   restoring 1 IPs
+2026-04-21T02:00:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #1, total #1, gap=first] IPs: 172.31.0.67
+2026-04-21T02:00:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #1, total #1, gap=first] IPs: 172.31.0.67
+Traceback (most recent call last):
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 630, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 591, in main
+    reconcile_pf_with_blocked(blocked, dry, wipe_stats)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 412, in reconcile_pf_with_blocked
+    f"⌛  *Gap since last:* `{gap_sec:.0f}s`" + (f" (expected: ~60s)" if gap_sec else "") + "\n"
+                             ^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+
+----- CLEAN RESTART 2026-04-21T02:05:38Z -----
+2026-04-21T02:05:38 | INFO | ======================================================================
+2026-04-21T02:05:38 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=19916
+2026-04-21T02:05:38 | INFO |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T02:05:38 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T02:05:38 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T02:05:38 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T02:05:38 | INFO |   lifetime wipes seen: 0
+2026-04-21T02:05:38 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T02:05:38 | INFO |   health ✅ opnsense_pf_read: 0 entries
+2026-04-21T02:05:38 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T02:05:38 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T02:05:55 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T02:05:55 | INFO |   restoring 1 IPs
+2026-04-21T02:06:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #1, total #1, gap=first] IPs: 172.31.0.67
+Traceback (most recent call last):
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 630, in <module>
+    main()
+    ~~~~^^
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 591, in main
+    reconcile_pf_with_blocked(blocked, dry, wipe_stats)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/.openclaw/workspace/scripts/autoblock.py", line 412, in reconcile_pf_with_blocked
+    f"⌛  *Gap since last:* `{gap_sec:.0f}s`" + (f" (expected: ~60s)" if gap_sec else "") + "\n"
+                             ^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+
+----- CLEAN RESTART 2026-04-21T02:07:41Z -----
+2026-04-21T02:07:41 | INFO | ======================================================================
+2026-04-21T02:07:41 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=20011
+2026-04-21T02:07:41 | INFO |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T02:07:41 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T02:07:41 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T02:07:41 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T02:07:41 | INFO |   lifetime wipes seen: 0
+2026-04-21T02:07:41 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T02:07:41 | INFO |   health ✅ opnsense_pf_read: 0 entries
+2026-04-21T02:07:41 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T02:07:41 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T02:08:02 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T02:08:02 | INFO |   restoring 1 IPs
+2026-04-21T02:09:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #1, total #1, gap=first] IPs: 172.31.0.67
+2026-04-21T02:10:05 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #2, total #2, gap=47s] IPs: 172.31.0.67
+2026-04-21T02:11:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #3, total #3, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:12:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #4, total #4, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:13:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #5, total #5, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:14:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #6, total #6, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:15:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #7, total #7, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:16:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #8, total #8, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:17:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #9, total #9, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:18:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #10, total #10, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:19:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #11, total #11, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:20:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #12, total #12, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:21:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #13, total #13, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:22:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #14, total #14, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:23:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #15, total #15, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:24:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #16, total #16, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:25:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #17, total #17, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:26:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #18, total #18, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:27:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #19, total #19, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:28:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #20, total #20, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:29:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #21, total #21, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:30:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #22, total #22, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:31:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #23, total #23, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:32:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #24, total #24, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:33:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #25, total #25, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:34:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #26, total #26, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:35:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #27, total #27, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:36:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #28, total #28, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:37:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #29, total #29, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:38:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #30, total #30, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:39:26 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #31, total #31, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:40:26 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #32, total #32, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:41:27 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #33, total #33, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:42:28 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #34, total #34, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:43:28 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #35, total #35, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:44:29 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #36, total #36, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:45:30 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #37, total #37, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:46:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #38, total #38, gap=31s] IPs: 172.31.0.67
+2026-04-21T02:47:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #39, total #39, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:48:02 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #40, total #40, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:49:03 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #41, total #41, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:50:03 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #42, total #42, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:51:04 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #43, total #43, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:52:05 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #44, total #44, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:53:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #45, total #45, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:54:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #46, total #46, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:55:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #47, total #47, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:56:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #48, total #48, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:57:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #49, total #49, gap=61s] IPs: 172.31.0.67
+2026-04-21T02:58:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #50, total #50, gap=62s] IPs: 172.31.0.67
+2026-04-21T02:59:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #51, total #51, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:00:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #52, total #52, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:01:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #53, total #53, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:02:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #54, total #54, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:03:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #55, total #55, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:04:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #56, total #56, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:05:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #57, total #57, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:06:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #58, total #58, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:07:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #59, total #59, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:08:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #60, total #60, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:09:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #61, total #61, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:10:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #62, total #62, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:11:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #63, total #63, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:12:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #64, total #64, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:13:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #65, total #65, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:14:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #66, total #66, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:15:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #67, total #67, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:16:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #68, total #68, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:17:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #69, total #69, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:18:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #70, total #70, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:19:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #71, total #71, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:20:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #72, total #72, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:21:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #73, total #73, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:22:26 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #74, total #74, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:23:27 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #75, total #75, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:24:27 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #76, total #76, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:25:28 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #77, total #77, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:26:29 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #78, total #78, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:27:30 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #79, total #79, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:28:30 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #80, total #80, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:29:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #81, total #81, gap=31s] IPs: 172.31.0.67
+2026-04-21T03:30:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #82, total #82, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:31:02 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #83, total #83, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:32:03 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #84, total #84, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:33:04 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #85, total #85, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:34:04 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #86, total #86, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:35:05 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #87, total #87, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:36:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #88, total #88, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:37:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #89, total #89, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:38:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #90, total #90, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:39:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #91, total #91, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:40:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #92, total #92, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:41:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #93, total #93, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:42:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #94, total #94, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:43:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #95, total #95, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:44:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #96, total #96, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:45:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #97, total #97, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:46:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #98, total #98, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:47:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #99, total #99, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:48:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #100, total #100, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:49:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #101, total #101, gap=52s] IPs: 172.31.0.67
+2026-04-21T03:50:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #102, total #102, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:51:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #103, total #103, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:52:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #104, total #104, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:53:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #105, total #105, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:54:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #106, total #106, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:55:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #107, total #107, gap=62s] IPs: 172.31.0.67
+2026-04-21T03:56:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #108, total #108, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:57:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #109, total #109, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:58:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #110, total #110, gap=61s] IPs: 172.31.0.67
+2026-04-21T03:59:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #111, total #111, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:00:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #112, total #112, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:01:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #113, total #113, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:02:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #114, total #114, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:03:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #115, total #115, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:04:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #116, total #116, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:05:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #117, total #117, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:06:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #118, total #118, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:07:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #119, total #119, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:08:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #120, total #120, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:09:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #121, total #121, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:10:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #122, total #122, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:11:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #123, total #123, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:12:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #124, total #124, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:13:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #125, total #125, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:14:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #126, total #126, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:15:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #127, total #127, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:16:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #128, total #128, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:17:26 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #129, total #129, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:18:27 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #130, total #130, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:19:28 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #131, total #131, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:20:28 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #132, total #132, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:21:29 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #133, total #133, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:22:30 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #134, total #134, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:23:30 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #135, total #135, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:24:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #136, total #136, gap=31s] IPs: 172.31.0.67
+2026-04-21T04:25:01 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #137, total #137, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:26:02 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #138, total #138, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:27:03 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #139, total #139, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:28:04 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #140, total #140, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:29:04 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #141, total #141, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:30:05 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #142, total #142, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:31:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #143, total #143, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:32:06 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #144, total #144, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:33:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #145, total #145, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:34:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #146, total #146, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:35:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #147, total #147, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:36:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #148, total #148, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:37:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #149, total #149, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:38:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #150, total #150, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:39:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #151, total #151, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:40:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #152, total #152, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:41:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #153, total #153, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:42:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #154, total #154, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:43:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #155, total #155, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:44:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #156, total #156, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:45:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #157, total #157, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:46:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #158, total #158, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:47:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #159, total #159, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:48:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #160, total #160, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:49:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #161, total #161, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:50:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #162, total #162, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:51:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #163, total #163, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:52:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #164, total #164, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:53:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #165, total #165, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:54:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #166, total #166, gap=62s] IPs: 172.31.0.67
+2026-04-21T04:55:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #167, total #167, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:56:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #168, total #168, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:57:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #169, total #169, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:58:25 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #170, total #170, gap=61s] IPs: 172.31.0.67
+2026-04-21T04:59:26 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #171, total #171, gap=61s] IPs: 172.31.0.67
+
+----- CLEAN RESTART 2026-04-21T05:02:13Z -----
+2026-04-21T05:02:13 | INFO | ======================================================================
+2026-04-21T05:02:13 | INFO | OpenClaw Auto-Block v3 (wipe-aware) starting — pid=23710
+2026-04-21T05:02:13 | INFO |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T05:02:13 | INFO |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T05:02:13 | INFO |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T05:02:13 | INFO |   scan thresholds: 15 blocks OR 5 ports (last 5000 lines)
+2026-04-21T05:02:13 | INFO |   lifetime wipes seen: 0
+2026-04-21T05:02:13 | INFO |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T05:02:13 | INFO |   health ✅ opnsense_pf_read: 0 entries
+2026-04-21T05:02:13 | INFO |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T05:02:13 | INFO |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T05:02:34 | INFO | reboot-recovery: pf=0 entries, json=1
+2026-04-21T05:02:34 | INFO |   restoring 1 IPs
+2026-04-21T05:03:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #1, total #1, gap=first] IPs: 172.31.0.67
+2026-04-21T05:04:07 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #2, total #2, gap=48s] IPs: 172.31.0.67
+2026-04-21T05:05:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #3, total #3, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:06:08 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #4, total #4, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:07:09 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #5, total #5, gap=62s] IPs: 172.31.0.67
+2026-04-21T05:08:10 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #6, total #6, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:09:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #7, total #7, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:10:11 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #8, total #8, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:11:12 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #9, total #9, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:12:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #10, total #10, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:13:13 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #11, total #11, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:14:14 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #12, total #12, gap=62s] IPs: 172.31.0.67
+2026-04-21T05:15:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #13, total #13, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:16:15 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #14, total #14, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:17:16 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #15, total #15, gap=62s] IPs: 172.31.0.67
+2026-04-21T05:18:17 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #16, total #16, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:19:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #17, total #17, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:20:18 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #18, total #18, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:21:19 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #19, total #19, gap=62s] IPs: 172.31.0.67
+2026-04-21T05:22:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #20, total #20, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:23:20 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #21, total #21, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:24:21 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #22, total #22, gap=62s] IPs: 172.31.0.67
+2026-04-21T05:25:22 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #23, total #23, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:26:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #24, total #24, gap=61s] IPs: 172.31.0.67
+2026-04-21T05:26:53 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #25, total #25, gap=31s] IPs: 172.31.0.67
+2026-04-21T05:27:23 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #26, total #26, gap=31s] IPs: 172.31.0.67
+2026-04-21T05:27:54 | ERROR | pfctl show failed (rc=255, stderr='pfctl: Table does not exist.')
+2026-04-21T05:28:24 | INFO | reconcile: pf wiped (likely OPNsense update_tables.py cron) — re-added 1/1 block(s) [session_wipe #27, total #27, gap=62s] IPs: 172.31.0.67
+
+----- AUTOBLOCK v4 START 2026-04-21T05:36:01Z -----
+2026-04-21T05:36:01 | INFO  | ======================================================================
+2026-04-21T05:36:01 | INFO  | OpenClaw Auto-Block v4 (external-alias) starting — pid=24786
+2026-04-21T05:36:01 | INFO  |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-21T05:36:01 | INFO  |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-21T05:36:01 | INFO  |   prior blocks: 1 → ['172.31.0.67']
+2026-04-21T05:36:01 | INFO  |   scan thresholds: 15 blocks OR 5 unique ports
+2026-04-21T05:36:01 | INFO  |   alias file (kali): /home/kali/.openclaw/blocked_ips/blocked_ips.txt
+2026-04-21T05:36:01 | INFO  |   alias file (opn):  /var/db/aliastables/autoblock_ip.txt
+2026-04-21T05:36:01 | INFO  |   lifetime reconciles: 0
+2026-04-21T05:36:01 | INFO  |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-21T05:36:01 | INFO  |   health ✅ opnsense_pf_read: 2 entries
+2026-04-21T05:36:01 | INFO  |   health ✅ opn_alias_file: 172.31.0.67
+203.0.113.99
+2026-04-21T05:36:01 | INFO  |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-21T05:36:01 | INFO  |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-21T05:36:01 | INFO  | startup sync: pushing blocked.json → OPNsense alias_file + pf
+2026-04-21T05:36:01 | INFO  | sync OK: 1 IPs in alias_file + pf — startup — pfctl: 
+2026-04-21T15:50:55 | INFO  | sync OK: 2 IPs in alias_file + pf — new block 172.31.0.69 — pfctl: 
+2026-04-21T15:50:55 | BLOCKED | IP=172.31.0.69 | RULE=928 blocked probes, 521 unique ports
+2026-04-21T15:51:17 | INFO  | cycle 1218: 1 new block(s) · suricata=0 flog_candidates=1
+2026-04-21T21:31:13 | UNBLOCKED | IP=172.31.0.67 | REASON=TTL_EXPIRED
+2026-04-21T21:31:13 | INFO  | sync OK: 1 IPs in alias_file + pf — TTL expired 1 block(s) — pfctl: 
+
+----- AUTOBLOCK v4 START 2026-04-22T06:32:41Z -----
+2026-04-22T06:32:41 | INFO  | ======================================================================
+2026-04-22T06:32:41 | INFO  | OpenClaw Auto-Block v4 (external-alias) starting — pid=2088
+2026-04-22T06:32:41 | INFO  |   mode=LIVE · TTL=24.0h · poll=30s · telegram_timeout=30s
+2026-04-22T06:32:41 | INFO  |   whitelist: 13 lab IPs (+ self-sources.txt)
+2026-04-22T06:32:41 | INFO  |   prior blocks: 1 → ['172.31.0.69']
+2026-04-22T06:32:41 | INFO  |   scan thresholds: 15 blocks OR 5 unique ports
+2026-04-22T06:32:41 | INFO  |   alias file (kali): /home/kali/.openclaw/blocked_ips/blocked_ips.txt
+2026-04-22T06:32:41 | INFO  |   alias file (opn):  /var/db/aliastables/autoblock_ip.txt
+2026-04-22T06:32:41 | INFO  |   lifetime reconciles: 0
+2026-04-22T06:32:41 | INFO  |   health ✅ opnsense_ssh: PONG
+FreeBSD 14.2-RELEASE amd64
+2026-04-22T06:32:41 | INFO  |   health ✅ opnsense_pf_read: 1 entries
+2026-04-22T06:32:41 | INFO  |   health ✅ opn_alias_file: 172.31.0.69
+2026-04-22T06:32:41 | INFO  |   health ✅ telegram_script: /home/kali/.openclaw/workspace/scripts/telegram-alert.sh
+2026-04-22T06:32:41 | INFO  |   health ✅ ssh_key: /home/kali/.ssh/id_rsa
+2026-04-22T06:32:41 | INFO  | startup sync: pushing blocked.json → OPNsense alias_file + pf
+2026-04-22T06:32:41 | INFO  | sync OK: 1 IPs in alias_file + pf — startup — pfctl: 
+2026-04-22T15:51:03 | UNBLOCKED | IP=172.31.0.69 | REASON=TTL_EXPIRED
+2026-04-22T15:51:03 | INFO  | sync OK: 0 IPs in alias_file + pf — TTL expired 1 block(s) — pfctl: 
+2026-04-22T18:53:53 | INFO  | sync OK: 1 IPs in alias_file + pf — new block 10.0.1.67 — pfctl: 
+2026-04-22T18:53:53 | BLOCKED | IP=10.0.1.67 | RULE=16 blocked probes, 3 unique ports
+2026-04-22T18:54:16 | INFO  | cycle 1467: 1 new block(s) · suricata=0 flog_candidates=1
+2026-04-23T05:05:04 | INFO  | sync OK: 1 IPs in alias_file + pf — reconcile drift (missing=0 extra=1) — pfctl: 

@@ -1,0 +1,27 @@
+# Secrets & credentials
+.env
+*.env.local
+*.env.production
+*.pem
+*.key
+*.p12
+.gh-token
+opn-api.env
+website/includes/secrets.php
+blocked.json.bak
+
+# Personal infra (don't expose in public repo)
+*.tailscale.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.bak
+*.pid
