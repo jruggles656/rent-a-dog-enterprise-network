@@ -25,10 +25,11 @@
       <sub>🔧 Web + AI Infra<br/>Security Lead</sub>
     </td>
     <td align="center" width="170">
-      <!-- TODO: replace src with https://github.com/USERNAME.png and wrap in <a href="https://github.com/USERNAME"> -->
-      <img src="https://ui-avatars.com/api/?name=Jason+Cortez-Robles&size=220&background=30363d&color=e6edf3&bold=true&font-size=0.4" width="110" alt="Jason Cortez-Robles" />
-      <br />
-      <b>Jason Cortez-Robles</b>
+      <a href="https://github.com/jcortt">
+        <img src="https://github.com/jcortt.png" width="110" alt="Jason Cortez-Robles" />
+        <br />
+        <b>Jason Cortez-Robles</b>
+      </a>
       <br />
       <sub>🌐 Network +<br/>Firewall Admin</sub>
     </td>
